@@ -1,0 +1,131 @@
+body, main /* On utilise flexbox pour centrer notre page au centre du navigateur*/
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
+#container /* On utilise à nouveau flexbox, cette fois pour disposer nos cartes sur le plateau de jeu */
+{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 420px;
+    width: 750px;
+}
+
+#restartButton
+{
+    display: none;
+}
+
+.card
+{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.hidden /* Une image grise unie, pour remplacer l'image du fruit si la carte est retournée */
+{
+    background-image: url(images/grey.png) !important;
+}
+
+table
+{
+    display: inline-block;
+    border-collapse: collapse;
+}
+
+table, th, td
+{
+    border: solid black 1px;
+}
+
+th, td
+{
+    padding: 3px;
+}
+
+caption
+{
+    caption-side: top;
+}
+
+/* Puis on définit tous les fonds pour les 14 cartes de fruits différents */ 
+
+.abricot
+{
+    background-image: url(images/abricot.png);
+}
+
+.bananejaune
+{
+    background-image: url(images/bananejaune.png);
+}
+
+.cerisesjaunes
+{
+    background-image: url(images/cerisesjaunes.png);
+}
+
+.cerisesrouges
+{
+    background-image: url(images/cerisesrouges.png);
+}
+
+.citronjaune
+{
+    background-image: url(images/citronjaune.png);
+}
+
+.citronvert
+{
+    background-image: url(images/citronvert.png);
+}
+
+.fraise
+{
+    background-image: url(images/fraise.png);
+}
+
+.framboise
+{
+    background-image: url(images/framboise.png);
+}
+
+.goyave
+{
+    background-image: url(images/goyave.png);
+}
+
+.grenade
+{
+    background-image: url(images/grenade.png);
+}
+
+.orange
+{
+    background-image: url(images/orange.png);
+}
+
+.pasteque
+{
+    background-image: url(images/pasteque.png);
+}
+
+.peche
+{
+    background-image: url(images/peche.png);
+}
+
+.poire
+{
+    background-image: url(images/poire.png);
+}
